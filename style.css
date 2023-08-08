@@ -221,6 +221,7 @@ button {
 
 button:hover {
     background-color: #0f964c;
+    cursor: pointer;
 }
 
 #event-date {
