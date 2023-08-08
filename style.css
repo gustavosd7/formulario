@@ -1,0 +1,228 @@
+/*font-family: 'Archivo', sans-serif;
+font-family: 'DM Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: #D9D9D9;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    margin-bottom: 91px;
+    font-size: 16px;
+}
+
+body::before {
+    content: '';
+    background-color: #121214;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 368px;
+    z-index: -1;
+}
+
+#page {
+    width: 736px;
+    margin: auto;
+}
+
+header {
+    width: 319px;
+    margin-top: 80px;
+}
+
+header h1 {
+    color: white;
+    font-family: 'Archivo', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 42px;
+    margin-bottom: 24px;
+}
+
+header p {
+    color: #42D3FF;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    background-color: #FAFAFC;
+    padding: 64px;
+    border-radius: 8px 8px 0px 0px;
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 0px;
+}
+
+legend {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    font-size: 24px;
+    border-bottom: 1px solid #E6E6F0;
+    padding: 0px 0px 16px;
+    line-height: 34px;
+}
+
+label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #4E4958;
+    margin-bottom: 8px;
+}
+
+label span {
+    color: #C1BCCC;
+    margin-left: 12px;
+    font-size: 12px;
+}
+
+label span:hover {
+    color: rgb(42, 42, 42);
+}
+
+fieldset {
+    margin-bottom: 48px;
+}
+
+
+
+.input-wrapper input, textarea, .input-wrapper select {
+    height: 56px;
+    border-radius: 8px;
+    background-color: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    padding: 15px;
+    resize: none;
+
+}
+
+.input-wrapper select {
+    appearance: none;
+    -moz-appearence: none;
+    -webkit-appearence: none;
+    -ms-appearence: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: right 24px top 50%;
+}
+
+.input-wrapper textarea {
+    height: 168px;
+}
+
+
+.checkbox-wrapper {
+    display: flex;
+}
+
+.checkbox-wrapper label {
+    margin: 0;
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.checkbox-wrapper label::before {
+    content: '';
+    border: 1px solid #E6E6F0;
+    width: 24px;
+    height: 24px;
+    border-radius: 8px;
+}
+
+
+.checkbox-wrapper input {
+    width: 24px;
+    height: 24px;
+    margin-top: 24px;
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-wrapper input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+.checkbox-wrapper input:focus + label::before {
+    outline: 2px solid black;
+}
+
+textarea {
+    width: 608px;
+    height: 168px;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+}
+
+
+
+.col-3 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+footer {
+    background-color: #F0F0F4;
+    height: 136px;
+    display: flex;
+    padding: 40px 64px;
+    flex-direction: column;
+    border-radius: 0px 0px 8px 8px;
+    width: 736px;
+    border-top: 1px solid rgba(51, 50, 50, 0.145)
+}
+
+button {
+    background-color: #03b955;
+    color: white;
+    border: none;
+    width: 608px;
+    height: 56px;
+    margin: auto;
+    border-radius: 8px;
+    size: 16px;
+    font-weight: 600;
+    font-family: 'Archivo', sans-serif;
+}
+
+button:hover {
+    background-color: #0f964c;
+}
+
+#event-date {
+    width: 312px;
+}
